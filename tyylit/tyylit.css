@@ -1,0 +1,19 @@
+bode{
+    background-color:azure;
+    width: 60%;
+    margin: auto;
+}
+
+.content {
+    background-color: rgb(red, green, blue);
+    padding: 10px;
+}
+ht,
+tb,
+table {
+    border: 1px solid black;
+}
+
+img {
+    height: 200px;
+}
