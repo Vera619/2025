@@ -6,5 +6,34 @@
 </head>
 <body>
     <h1>Lomake-esimerkki</h1>
+
+   <form>
+    <fieldset>
+        <legend>Henkilötiedot</legend>
+        <table>
+            <tr>
+                <th colspan="2">Anna henkilötietosi</th>
+                <th colspan="2">Anna kulkuneuvon tiedot</th>
+            </tr>
+            <tr>
+                <td><label for="frame">Etunimi</label></td>
+                <td><input type="text" id="fname" name="fname"></td>
+                <td><input type="checkbox"></td>
+                <td><label>Polkupyöra</label></td>
+            </tr>
+            <tr>
+            <td><label for="lmane">Sukumini</label></td>
+            <td><input type="text" id="lmane" name="lmane">
+            <td> <input type="checkbox"></td>
+            <td> <label>Auto</label></td>
+            </tr>
+    </table>
+    </fieldset>
+    <fieldset>
+        <legend>Kerro itsestäsi</legend>
+        <textarea rows="10" cols="50"></textarea><br>
+        <input type="file" value="Choose File">
+    </fieldset>
+   </form>
 </body>
 </html>
