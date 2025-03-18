@@ -49,3 +49,14 @@ fieldset {
     border-radius: 20px;
     border-style: solid;
 }
+input [ type=button] {
+    background-color: burlywood;
+    border-color: blue;
+    border-width: 2px;
+    border-radius: 5px;
+}
+input [typi=text],
+input [typi=checkbox] {
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
