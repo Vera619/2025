@@ -57,6 +57,7 @@ input [ type=button] {
     border-color: blue;
     border-width: 2px;
     border-radius: 5px;
+
 }
 input [typi=text],
 input [typi=checkbox] {
@@ -65,11 +66,13 @@ input [typi=checkbox] {
 }
 .content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .input-containen {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-left: 5px;
 }
