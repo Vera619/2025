@@ -48,6 +48,9 @@ fieldset {
     border-width: 3px;
     border-radius: 20px;
     border-style: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 input [ type=button] {
     background-color: burlywood;
@@ -59,4 +62,14 @@ input [typi=text],
 input [typi=checkbox] {
     background-color: antiquewhite;
     border-radius: 5px;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-containen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
