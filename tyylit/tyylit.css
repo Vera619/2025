@@ -73,6 +73,6 @@ input [typi=checkbox] {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 400px;
+    margin-left: 400px;
 }
