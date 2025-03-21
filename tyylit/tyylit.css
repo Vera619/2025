@@ -1,71 +1,70 @@
-bode{
-    background-color:azure;
+body{
+    background-color: azure;
     width: 60%;
-    margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
+    margin:auto;
+    font-family: 'Times New Roman', Times, serif;
 }
-
-.content {
-    background-color: rgb(red, green, blue);
+.content{
+    background-color: #d9f3ea;
     padding: 10px;
 }
-ht,
-tb,
-table {
+
+table, th, td {
     border: 1px solid black;
     margin: 10px;
 }
-th,
-td,
+
 th{
     font-size: large;
-    font-weight: 300;
-    text-align: left;
+    font-weight: 600;
     padding: 5px;
 }
 td{
-    font-size: large ;
-    font-weight: 200 ;
+    font-size: large;
+    font-weight: 300;
     padding: 5px;
 }
-img {
-    height: 200px;
+
+img{
+    width: 400px; height: 260px;
 }
 
-p {
-    font-size:large;
-    line-height: 1.5;
+p{
+    font-size: large;
+    line-height: 1,5;
     text-indent: 20px;
-    letter-spacing: 10px;
+    word-spacing: 2px;
+    text-align: justify;
 }
 
 h1{
+    font-size: xx-large;
+    margin: 30px;
+}
 
-}
-fieldset {
-    background-color: aliceblue;
-    border-color: darkmagenta;
+fieldset{
+    background-color: #eef2f9;
+    border-color: rgb(171, 184, 239);
     border-width: 3px;
-    border-radius: 20px;
-    border-style: solid;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    border-radius: 15px;
+    border-style:solid;
 }
-input [ type=button] {
-    background-color: burlywood;
-    border-color: blue;
+
+input[type=button]{
+    background-color: aliceblue;
+    border-color:rgb(85, 85, 190);
     border-width: 2px;
     border-radius: 5px;
+}
 
-}
-input [typi=text],
-input [typi=checkbox] {
-    background-color: antiquewhite;
+input[type=text], input[type=checkbox]{
+    background-color:rgb(233, 242, 247);
     border-radius: 5px;
+    border-color: rgb(171, 184, 239);
 }
-.content {
-    display: flex;
+
+.content{
+    display:flex;
     flex-direction: column;
 }
 
@@ -73,6 +72,6 @@ input [typi=checkbox] {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 400px;
-    margin-left: 400px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
