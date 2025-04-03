@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google-kartta</title>
+  <link rel="stylesheet" href="tyylit/map.css">
+
+</head>
+
+<body>
+  <div class="container-fluid w-75 p-5 bg-light">
+    <h1 class="my-5">Sijainti kartalla</h1>
+
+    <iframe id="map-frame" src="https://www.google.com/maps?q=Yliopistonkatu36Lappeenranta&output=embed" width="100%"
+      height="100%" frameBorder="0">
+    </iframe>
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Katuosoite</label>
+        <input type="text" class="form-control" id="addr-field" aria-describedby="emailHelp">
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Kaupunki</label>
+          <input type="text" class="form-control" id="city-field">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="ShouMap()">ShouMap</button>
+    </form>
+  </div>
+  <script defer src="scripts/map.js"> </script>
+
+
+
+</body>
+
+</html>
