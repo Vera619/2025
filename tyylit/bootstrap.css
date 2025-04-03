@@ -1,0 +1,51 @@
+.table-custom {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-custom th, .table-custom td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+.table-custom th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+.table-custom td {
+    background-color: #fafafa;
+}
+.form-container {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

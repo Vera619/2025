@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Bootstrap Table Centering</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
     <nav class="navbar navbar-expand-mg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Bootstap</a>
+        <a class="navbar-brand" href="#">Vera Gladkaya</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -48,19 +48,20 @@
     </nav>
     <div class="container">
       <div id="hello" class="text-center my-3 py-2"> 
-    <h1>Hello, world!</h1>
+    <h1>Tradenomi (AMK), tietojenkäsittely, päivätoteutus, Lappeenranta, 210 op</h1>
   </div>
   <div id="karuselli" class="my-5">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="kuvat/minh-tran-xL86g_rz28M-unsplash.jpg" class="d-block w-100" alt="...">
+          <img src="kuvat/Näyttökuva 2025-03-29 163028.png" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="kuvat/pankaj-patel-bYiw48KLbmw-unsplash.jpg" class="d-block w-100" alt="...">
+          <img src="kuvat/Näyttökuva 2025-03-29 163413.png" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="kuvat/sigmund-taxUPTfDkpc-unsplash.jpg" class="d-block w-100" alt="...">
+          <img src="kuvat/Näyttökuva 2025-03-29 163225.png" class="d-block w-100" alt="...">
+         
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -77,7 +78,7 @@
     
       <div id="kortti" class="my-5 d-flex justify-content-evenly">
         <div class="card" style="width: 18rem;">
-          <img src="https://cataas.com/cat" class="card-img-top" alt="...">
+          <img src="https://cataas.com/cat?1" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Kissakuva</h5>
             <p class="card-text">Kuva haettu cat as a service palvelusta (<a href="https://cataas.com/cat">cataas.com/cat</a>)</p>
@@ -85,7 +86,7 @@
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="https://cataas.com/cat" class="card-img-top" alt="...">
+          <img src="https://cataas.com/cat?2" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Kissakuva</h5>
             <p class="card-text">Kuva haettu cat as a service palvelusta (<a href="https://cataas.com/cat">cataas.com/cat</a>)</p>
@@ -93,7 +94,7 @@
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="https://cataas.com/cat" class="card-img-top" alt="...">
+          <img src="https://cataas.com/cat?3" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Kissakuva</h5>
             <p class="card-text">Kuva haettu cat as a service palvelusta (<a href="https://cataas.com/cat">cataas.com/cat</a>)</p>
@@ -101,35 +102,78 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="container my-5">
+      <div class="d-flex justify-content-center">
+          <table class="table">
+              <thead>
+                  <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Kurssi</th>
+                      <th scope="col">Ryhmä</th>
+                      <th scope="col">Laajuus (op)</th>
+                  </tr>
+              </thead>
+              <tbody class="table-group-divider">
+                  <tr>
+                      <th scope="row">1</th>
+                      <td><strong>Webteknologiat</strong></td>
+                      <td>AL00CM19-3004</td>
+                      <td>5</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">2</th>
+                      <td><strong>Asiakkuudet ja markkinointi</strong></td>
+                      <td>AL00CD61-3042</td>
+                      <td>5</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">3</th>
+                      <td><strong>Ohjelmistotuotanto</strong></td>
+                      <td>AL00CM18-3004</td>
+                      <td>5</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
 
+
+
+  <div id="lomake" class="my-5">
+    <h2 class="text-center">Loppupalaute</h2>
+    <div class="d-flex justify-content-center">
+        <div style="width: 400px;"> <!-- Установите ширину формы -->
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Viesti</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Sähköposti</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary mb-3">Lähetä viesti</button>
+            </div>
+        </div>
     </div>
-    <div id="lomake" class="my-5">
-      <h2>Jätä viesti</h2>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Viesti</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Sähköposti</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <button type="submit" class="btn btn-primary mb-3">Lähetä viesti</button>
-      </div>
-    </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-    const myCarouselElement = document.querySelector('#myCarousel')
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    const myCarouselElement = document.querySelector('#myCarousel');
     const carousel = new bootstrap.Carousel(myCarouselElement, {
-      interval: 2000,
-      wrap: false
-    })
+        interval: 2000,
+        wrap: false
+    });
+</script>
+<div class="text-center my-5">
+  <h3>Kun olet lukenut sisällön, seuraa linkkiä ja täytä
+      <a href="http://127.0.0.1:5500/Lomaketeht%C3%A4v%C3%A42.html">lomake</a>
+  </h3>
+  <h2>Kiitos! <span class="text-danger"></span></h2>
+</div>
+    </div>
     
-    </script>
-
-    
-
   </body>
-
 </html>
