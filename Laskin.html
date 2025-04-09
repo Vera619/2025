@@ -22,14 +22,11 @@
       <br> voit muokata numeroita "-" ja "+" painikkeista,
       <br> valitse haluamasi laskutoimitus,
       <br> klikkaa "Laske".</p>
-      <br>
-        
-        
         <div class="d-flex flex-row mb-3 column-gap-3">
         <div class="input-group mb-3">
-            <button class="btn btn-primary" id="calc-button" type="button" onclick="minusNro1()">-</button>
+            <button class="btn btn-primary" id="calc-button" type="button" onclick="minusn1()">-</button>
             <input class="form-control" id="firstTextInput" type="number" min="1" max="10">
-            <button class="btn btn-primary" id="buttonB" type="button" onclick="plusNro1()">+</button>
+            <button class="btn btn-primary" id="buttonB" type="button" onclick="plusn1()">+</button>
         </div>
         
         <select class="form-select form-select-lg mb-3" id="operation" aria-label="Large select example">
@@ -40,15 +37,15 @@
         </select>
             
         <div class="input-group mb-3">
-            <button class="btn btn-primary" type="button" onclick="minusNro2()">-</button>
+            <button class="btn btn-primary" type="button" onclick="minusn2()">-</button>
             <input class="form-control" id="firstTextInput1" type="number" min="1" max="10">
-            <button class="btn btn-primary" type="button" onclick="plusNro2()">+</button>
+            <button class="btn btn-primary" type="button" onclick="plusn2()">+</button>
         </div>
         
         </div>
         
         <div class="d-grid gap-2">
-            <button class="btn btn-primary" id="calc-button" type="button" onclick="calculate()">LASKE</button>
+            <button class="btn btn-primary" id="calc-button-calculate" type="button" onclick="calculate()">LASKE</button>
             <h1 class="form-control text-center" id="tulos">-</h1>
             <section id="klik"></section>
 
