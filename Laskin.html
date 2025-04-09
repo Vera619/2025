@@ -1,84 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laskin</title>
-    <link rel="icon" href="kuvat/1.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laskin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+        crossorigin="anonymous">
 </head>
-<body>
-    <div class="container-fluid w-75 p-5 bg-light">
-        <h1 class="mb-5 align-items-center">Valitse numerot ja laske</h1>
 
-        <div class="container w-50 align-items-center">
-            <div class="d-flex flex-row mb-3">
-                <div class="input-group mb-3 me-2">
-                    <button class="btn btn-outline-secondary" type="button" onclick="decrement(0)">-</button>
-                    <input type="number" class="form-control" id="num1" value="0" aria-label="First number">
-                    <button class="btn btn-outline-secondary" type="button" onclick="increment(0)">+</button>
-                </div>
+<body onload="init()">
 
-                <select class="form-select form-select-lg mb-3 me-2" id="operation">
-                    <option value="" selected disabled>Valitse operaatio</option>
-                    <option value="+">+</option>
-                    <option value="-">-</option>
-                    <option value="*">*</option>
-                    <option value="/">/</option>
-                </select>
+    <div class="container-fluid w-100 p-5 bg-light">
+      <h1 class="text-center my-5 py-2">Valitse numerot ja laske</h1>
+  
+    <div class="container w-100 align-items-center">
 
-                <div class="input-group mb-3 me-2">
-                    <button class="btn btn-outline-secondary" type="button" onclick="decrement(1)">-</button>
-                    <input type="number" class="form-control" id="num2" value="0" aria-label="Second number">
-                    <button class="btn btn-outline-secondary" type="button" onclick="increment(1)">+</button>
-                </div>
-
-                <button type="button" id="calc-button" class="btn btn-primary ms-2" onclick="calculate()">LASKE</button>
-            </div>
-
-            <!-- Для отображения результата -->
-            <h2 id="result"></h2>
+      <h5 onmouseover="iInfo()" onmouseout="iInfo()"><i class="bi bi-info-circle"></i></h5>
+      <p class="m-3 text-center" id="i-text" style="display: none;">Ohjelma tuottaa tekstikenttiin satunnaisluvut 1-10 välillä,
+      <br> voit muokata numeroita "-" ja "+" painikkeista,
+      <br> valitse haluamasi laskutoimitus,
+      <br> klikkaa "Laske".</p>
+      <br>
+        
+        
+        <div class="d-flex flex-row mb-3 column-gap-3">
+        <div class="input-group mb-3">
+            <button class="btn btn-primary" id="calc-button" type="button" onclick="minusNro1()">-</button>
+            <input class="form-control" id="firstTextInput" type="number" min="1" max="10">
+            <button class="btn btn-primary" id="buttonB" type="button" onclick="plusNro1()">+</button>
         </div>
+        
+        <select class="form-select form-select-lg mb-3" id="operation" aria-label="Large select example">
+            <option selected value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+            
+        <div class="input-group mb-3">
+            <button class="btn btn-primary" type="button" onclick="minusNro2()">-</button>
+            <input class="form-control" id="firstTextInput1" type="number" min="1" max="10">
+            <button class="btn btn-primary" type="button" onclick="plusNro2()">+</button>
+        </div>
+        
+        </div>
+        
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" id="calc-button" type="button" onclick="calculate()">LASKE</button>
+            <h1 class="form-control text-center" id="tulos">-</h1>
+            <section id="klik"></section>
+
+            <div id="text"></div>
+            
+        </div>
+      </div>
+    
     </div>
+  
+    <script defer src="Scripts/laskin.js"> </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </div>
+  
+  </body>
+  
+  </html>
 
-    <!-- JavaScript для калькулятора -->
-    <script>
-        function increment(index) {
-            const input = document.getElementById(index === 0 ? 'num1' : 'num2');
-            input.value = parseInt(input.value) + 1;
-        }
 
-        function decrement(index) {
-            const input = document.getElementById(index === 0 ? 'num1' : 'num2');
-            input.value = Math.max(0, parseInt(input.value) - 1); // Не допускаем отрицательных значений
-        }
 
-        function calculate() {
-            const num1 = parseFloat(document.getElementById('num1').value);
-            const num2 = parseFloat(document.getElementById('num2').value);
-            const operation = document.getElementById('operation').value;
-            let result;
 
-            switch (operation) {
-                case '+':
-                    result = num1 + num2;
-                    break;
-                case '-':
-                    result = num1 - num2;
-                    break;
-                case '*':
-                    result = num1 * num2;
-                    break;
-                case '/':
-                    result = num2 !== 0 ? (num1 / num2) : 'Error: Division by zero';
-                    break;
-                default:
-                    result = 'Select an operation';
-            }
 
-            document.getElementById('result').innerText = `Tulos: ${result}`;
-        }
-    </script>
-</body>
-</html>
+
+
