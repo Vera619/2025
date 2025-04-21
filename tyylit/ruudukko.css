@@ -1,0 +1,23 @@
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 30px;
+        margin-top: 80px;
+    }
+        .grid-item{
+            width: 150px;
+            height: 150px;
+            margin: 7px;
+            border-width: 2px;
+            border-color:cornflowerblue;
+            border-radius: 15px;
+            background-color: darkgray;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    
+    .list-conteiner {
+        display: block;
+    }
