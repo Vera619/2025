@@ -1,6 +1,5 @@
 let counter = 0;
 
-
 function init(){
     let n1 = Math.floor(Math.random()* 10)+1;
     document.getElementById('firstTextInput').value = n1;
@@ -8,22 +7,22 @@ function init(){
     document.getElementById('firstTextInput1').value = n2;
 }
 
-function minusNro1() { 
+function minusnro1() { 
     let n1 = parseInt(document.getElementById('firstTextInput').value);
     if (n1 > 1) document.getElementById('firstTextInput').value = n1 - 1;
 }
 
-function plusNro1() {
+function plusnro1() {
     let n1 = parseInt(document.getElementById('firstTextInput').value);
     if (n1 < 10) document.getElementById('firstTextInput').value = n1 + 1;
 }
 
-function minusNro2() { 
+function minusnro2() { 
     let n2 = parseInt(document.getElementById('firstTextInput1').value);
     if (n2 > 1) document.getElementById('firstTextInput1').value = n2 - 1;
 }
 
-function plusNro2() {
+function plusnro2() {
     let n2 = parseInt(document.getElementById('firstTextInput1').value);
     if (n2 < 10) document.getElementById('firstTextInput1').value = n2 + 1;
 }
