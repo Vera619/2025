@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Google-kartta</title>
-  <link rel="stylesheet" href="tyylit/map.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
+    
 </head>
+<body onload="init ()">
 
-<body>
-  
-    <h1 class="my-5">Sijainti kartalla</h1>
 
-    <iframe src="https://www.google.com/maps?q=Yliopistonkatu36Lappeenranta&output=embed">
-    </iframe>
+
+
+    
+    <div class="container mt-5">
+        <h1>NumbersAPI</h1>
+        <h4>Mielinkiintoista tietoja numeroista </h4>
+        <button id="fetchData" class="btn btn-primary" onclick="getData()">Hae</button>
+        
+
+        <div class="spinner-border m-5" role="status" id="gif">
+            <span class="sr-only" >Loading...</span>
+        </div>
+        
+        
+    
+        
+        <p> <br>Laskurit <span id="counter">0</span></p>
+ 
+       
+        
+    
+        <section id="text"></section>
+        
+        <div id="accordion"></div>
+    </div>
     
 
-  </div>
-  
-  <style>
-    #text p {
-      background-color: #f8f9fa;
-      padding: 6px;
-      border: 1px solid #dee2e6;
-      border-radius: 8px;
-      margin: 5px 0;
-      transition: background-color 0.3s;
-    }
-
-    #text p:hover {
-      background-color: #e9ecef;
-    }
-  </style>
-  
 
 
+
+    <script src="scripts/Rest.js"></script>
+    
 </body>
-
 </html>
