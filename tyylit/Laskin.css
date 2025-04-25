@@ -1,0 +1,12 @@
+
+    p {
+      background-color: #f8f9fa;
+      padding: 6px;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      margin: 5px 0;
+      transition: background-color 0.3s;
+      background-color: #e9ecef;
+    }
+
+ 
